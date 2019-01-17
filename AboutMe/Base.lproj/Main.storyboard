@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="to3-N7-DAA">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="montana" translatesAutoresizingMaskIntoConstraints="NO" id="yw1-aJ-OP2">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="507"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Glacier National Park, Montana" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kTJ-x3-IdR">
+                                        <rect key="frame" x="0.0" y="507" width="375" height="40"/>
+                                        <fontDescription key="fontDescription" name="Cochin" family="Cochin" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RHo-W6-cL9">
+                                        <rect key="frame" x="0.0" y="547" width="375" height="100"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dgs-0G-hb1">
+                                                <rect key="frame" x="0.0" y="0.0" width="125" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="dyK-W0-tnd"/>
+                                                </constraints>
+                                                <state key="normal" title="LeftButton" image="norwayicon"/>
+                                                <connections>
+                                                    <action selector="LeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HfS-bD-acT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Wh-HX-MtY">
+                                                <rect key="frame" x="125" y="0.0" width="125" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="8XZ-Qw-hlb"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="doU-7h-rTj"/>
+                                                </constraints>
+                                                <state key="normal" title="UpButton" image="montanaicon"/>
+                                                <connections>
+                                                    <action selector="UpButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zXP-9e-KoC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="87Z-LJ-dzf">
+                                                <rect key="frame" x="250" y="0.0" width="125" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="67u-VP-De0"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="fvW-Bb-xH0"/>
+                                                </constraints>
+                                                <state key="normal" title="RightButton" image="swedenicon"/>
+                                                <connections>
+                                                    <action selector="LeftButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nXv-m6-c79"/>
+                                                    <action selector="RightButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5bt-SZ-ORY"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="2Wh-HX-MtY" firstAttribute="width" secondItem="Dgs-0G-hb1" secondAttribute="width" id="te5-8r-llg"/>
+                                            <constraint firstItem="87Z-LJ-dzf" firstAttribute="width" secondItem="Dgs-0G-hb1" secondAttribute="width" id="w8X-eT-n7V"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="RHo-W6-cL9" firstAttribute="top" secondItem="yw1-aJ-OP2" secondAttribute="bottom" constant="40" id="7bs-by-AFE"/>
+                                    <constraint firstAttribute="trailing" secondItem="yw1-aJ-OP2" secondAttribute="trailing" id="87R-J6-S1q"/>
+                                    <constraint firstItem="yw1-aJ-OP2" firstAttribute="top" secondItem="to3-N7-DAA" secondAttribute="top" id="d68-5a-AR8"/>
+                                    <constraint firstItem="RHo-W6-cL9" firstAttribute="top" secondItem="yw1-aJ-OP2" secondAttribute="bottom" constant="40" id="vJN-zO-obf"/>
+                                    <constraint firstItem="yw1-aJ-OP2" firstAttribute="leading" secondItem="to3-N7-DAA" secondAttribute="leading" id="x9d-3R-Doc"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="to3-N7-DAA" secondAttribute="bottom" id="7eC-Yz-hCg"/>
+                            <constraint firstAttribute="trailing" secondItem="to3-N7-DAA" secondAttribute="trailing" id="Qj6-Td-OJ8"/>
+                            <constraint firstItem="to3-N7-DAA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="WVf-Ru-rVV"/>
+                            <constraint firstItem="to3-N7-DAA" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="b8L-A6-HuN"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="Decription" destination="kTJ-x3-IdR" id="aEa-Tm-hpq"/>
+                        <outlet property="imagebox" destination="yw1-aJ-OP2" id="g3l-Nj-7AU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="montana" width="823" height="666"/>
+        <image name="montanaicon" width="295" height="241"/>
+        <image name="norwayicon" width="298" height="320"/>
+        <image name="swedenicon" width="261" height="295"/>
+    </resources>
+</document>
